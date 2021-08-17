@@ -639,7 +639,7 @@ void fab_read_svg(struct fab_vars *v, char *input_file_name, float scale, int po
                //
                next_number(&ptr,&x);
                //printf("   path h: %f\n",x);
-               current_element = 'j';
+               current_element = 'h';
                fab_path_point(v);
                path_point(&xn,&yn,x0+x,y0,transform,transforms,xnscale,ynscale,xnmid,vxmid,ynmid,vymid);
                fab_path_axis(v,xn);
